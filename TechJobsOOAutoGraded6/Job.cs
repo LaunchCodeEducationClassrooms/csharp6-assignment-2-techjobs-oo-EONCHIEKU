@@ -41,15 +41,47 @@ namespace TechJobsOOAutoGraded6
             return HashCode.Combine(Id);
         }
 
-        public override string? ToString()
-        {
-            return base.ToString();
-        }
-
-
-
         // TODO: Task 5: Generate custom ToString() method.
         //Until you create this method, you will not be able to print a job to the console.
+        public override string ToString()
+        {
+            if(Name == "" )
+            {
+                Name = "Data not available";
+                           
+            }
+            if (EmployerName.Value == "")
+            {
+                EmployerName.Value = "Data not available";
+            }
+            if(EmployerLocation.Value == "")
+            {
+                EmployerLocation.Value = "Data not available";
+
+            }
+            if(JobType.Value == "")
+            {
+                JobType.Value = "Data not available";
+
+            }
+            if(JobCoreCompetency.Value == "")
+            {
+                JobCoreCompetency.Value = "Data not available";
+            }
+            
+            {
+                return $"{Environment.NewLine}" +
+                    $"ID: {Id}{Environment.NewLine}" +
+                    $"Name: {Name}{Environment.NewLine}" +
+                    $"Employer: {EmployerName.Value}{Environment.NewLine}" +
+                    $"Location: {EmployerLocation.Value}{Environment.NewLine}" +
+                    $"Position Type: {JobType.Value}{Environment.NewLine}" +
+                    $"Core Competency: {JobCoreCompetency.Value}{Environment.NewLine}";
+            }
+            
+        }
+
+//... more job objects to follow        }
 
 
     }
