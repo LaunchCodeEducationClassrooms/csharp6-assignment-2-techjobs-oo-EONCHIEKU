@@ -7,7 +7,7 @@ namespace TechJobsOO.Tests
         //task 6 tests will verify that the refactoring changed the number of class members and info regarding JobField.
         //Tests have been numbered.
 
-        /* TODO: Task 6: Remove this line to uncomment the tests
+         //TODO: Task 6: Remove this line to uncomment the tests
          
         [TestMethod] //1
         public void Test_Attributes_Of_JobField()
@@ -84,7 +84,7 @@ namespace TechJobsOO.Tests
             Assert.IsTrue(methodLength < 8, "CoreCompetency class methods not properly refactored");
         }
 
-        TODO: Task 6: Remove this line to uncomment the tests */
+        //TODO: Task 6: Remove this line to uncomment the tests 
     }
 }
 
